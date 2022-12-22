@@ -1,3 +1,5 @@
+import '../style/style.js'
+
 export{number, countDownDate}
 let countDownDate = new Date ("12 27, 2022, 00: 00: 00").getTime();
 let number = setInterval(function(){
