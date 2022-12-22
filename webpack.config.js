@@ -22,6 +22,10 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
+				test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+				type: "file-loader?name=assets/[name].[ext]",
+			},
+            {
                 test: /\.scss$/i,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
