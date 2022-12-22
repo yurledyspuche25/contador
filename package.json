@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack --mode development",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/yurledyspuche25/contador/issues"
   },
-  "homepage": "https://github.com/yurledyspuche25/contador#readme",
+  "homepage": "https://yurledyspuche25.github.io/contador",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
@@ -27,6 +28,7 @@
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^8.0.0",
